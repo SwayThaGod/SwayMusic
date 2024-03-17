@@ -4,10 +4,10 @@ module.exports = {
   botInvite: "",
   supportServer: "",
   mongodbURL: "mongodb+srv://shiva:shiva@musicbotyt.ouljywv.mongodb.net/?retryWrites=true&w=majority",
-  status: 'RTXX GG',
+  status: 'Made By @rtfo',
   commandsDir: './commands',
   language: "en",
-  embedColor: "00fbff",
+  embedColor: "7F00FF",
   errorLog: "",
 
 
