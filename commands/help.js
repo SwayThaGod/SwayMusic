@@ -57,24 +57,15 @@ module.exports = {
            { name: '🎵 Now Playing', value: 'Display the currently playing song information' },
           { name: '🔊 Volume', value: 'Adjust the music volume [ hearing at high volumes is risky ]' },
         ) 
-       .setImage('https://cdn.discordapp.com/attachments/1150827819547504741/1168917372267151370/standard.gif?ex=65538222&is=65410d22&hm=b4994392f44679da41fc9304eb69deaa3769e136057556deec0db69ae8d33a97&')
+       .setImage('https://media.discordapp.net/attachments/1219070613256409138/1219070662686015548/SwayMusicBanner.png?ex=6609f707&is=65f78207&hm=d56eee14e8144a14c080a6f01c23f41264200350bca52b6c97a6433782ca7dc7&=&format=webp&quality=lossless')
+  
       const button1 = new ButtonBuilder()
-        .setLabel('YouTube')
-        .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
-        .setStyle(ButtonStyle.Link);
-
-      const button2 = new ButtonBuilder()
         .setLabel('Discord')
-        .setURL('https://discord.gg/FUEHs7RCqz')
+        .setURL('https://discord.gg/murderer')
         .setStyle(ButtonStyle.Link);
 
-      const button3 = new ButtonBuilder()
-        .setLabel('Code')
-        .setURL('https://github.com/RTX-GAMINGG/RTX-MUSIC-BOT-v3.6')
-        .setStyle(ButtonStyle.Link);
-
-      const row = new ActionRowBuilder()
-        .addComponents(button1, button2, button3);
+        const row = new ActionRowBuilder()
+        .addComponents(button1);
 
       interaction.reply({
         embeds: [musicCommandsEmbed, basicCommandsEmbed],
